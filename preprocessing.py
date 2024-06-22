@@ -1,9 +1,12 @@
 import cv2
 import numpy as np
 def gray(img):
+    if img.dtype != 'uint8':
+        img = img.astype('uint8')
     return cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
-def convert2binary(gray_scale_img):
+def convert2binary(img):
+    gray_scale_img = gray(img)
     return cv2.threshold(gray_scale_img, 0, 255, cv2.THRESH_BINARY_INV|cv2.THRESH_OTSU)[1]
 
 def find_pp(binary_img, axis=0):
@@ -75,3 +78,4 @@ def mark_horizontal_seam(image, seams, color=0):
             marked_image[i, j] = color
 
     return marked_image
+
