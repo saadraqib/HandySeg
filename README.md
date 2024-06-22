@@ -1,4 +1,4 @@
-# HandSeg package 
+# HandySeg package 
 
 ## 1. Line Segmentation from Handwritten Text
 
