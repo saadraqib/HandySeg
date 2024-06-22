@@ -79,3 +79,7 @@ def mark_horizontal_seam(image, seams, color=0):
 
     return marked_image
 
+def segmented_words(line_img, x_boundary, word_index):
+    start = x_boundary[word_index,0]
+    end = x_boundary[word_index,1]
+    return line_img[:,start:end]
