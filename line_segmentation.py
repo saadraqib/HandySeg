@@ -16,15 +16,8 @@ class line_segmenation:
 
         self.gray_scale = gray(img)
 
-        # energy_map = self.calculate_energy(gray_scale)
         self.img= img
-        # cost_matrix, backtrack_matrix = self.find_horizontal_seam(energy_map, spots)
-        # self.highlight_seam(energy_map,cost_matrix, backtrack_matrix, spots)
 
-        # marked_img = self.mark_horizontal_seam(img, seams)
-        # if(show_seam_paths):
-        #     plt.imshow(marked_img,cmap='gray')
-        #     plt.show()
 
     def img_preprocessed(self):
         return self.img
