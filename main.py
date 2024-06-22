@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter1d
 
 
-img = cv2.imread(r"C:\Users\saadr\OneDrive\Desktop\files\projects\Datasets\HW_part_IAM_dataset\000_01.png")
+img = cv2.imread(r"HW_part_IAM_dataset\000_01.png")
 gray_scale = gray(img)
 binary_image = convert2binary(gray_scale)
 hpp = find_pp(binary_image, axis=1)
