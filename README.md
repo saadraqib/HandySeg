@@ -1,4 +1,4 @@
-# OCR for Scanned Documents
+# HandSeg package 
 
 ## 1. Line Segmentation from Handwritten Text
 
