@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='HandySeg',  
-    version='0.1.0',
+    version='0.5.0', # [0.7.0 is used, so don't use it again]
     packages=find_packages(),
     install_requires=[
         'numpy',
@@ -10,7 +10,7 @@ setup(
         'scipy',
         'matplotlib',
     ],
-    author='Saad Raqib',  
+    author='SaadRaqib',
     author_email='saad.rqaziz@gmail.com', 
     description='A package for line and word segmentation of handwritten scanned text',
     long_description=open('README.md').read(),
